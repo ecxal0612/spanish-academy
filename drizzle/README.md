@@ -11,3 +11,7 @@
 3. **Prefix:** `db:generate` bakes `${DB_TABLE_PREFIX}` into migration SQL at generate time. The committed sample migration uses `charla_academy_*` to match this app. If you change the prefix in `.env`, either run **`db:push`** or **`pnpm db:generate`** (then migrate) so SQL matches `schema.ts`.
 
 Use a **unique** `DB_TABLE_PREFIX` per app when sharing one Neon project.
+
+## If `pnpm db:migrate` failed before
+
+If migrations were duplicated (two files creating the same tables), the second run can error with “already exists”. This repo now has a single baseline migration `0000_initial.sql`. On a **fresh** database, run **`pnpm db:migrate`** again. If that DB already has a `drizzle` migrations table or half-applied objects, use Neon SQL to drop the `charla_academy_*` tables and the `drizzle` schema/table Drizzle uses, or create a new Neon branch / empty DB, then migrate.
