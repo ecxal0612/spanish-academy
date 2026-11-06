@@ -9,7 +9,7 @@ export default async function HomePage() {
   return (
     <main className="mx-auto flex min-h-screen max-w-3xl flex-col gap-8 px-6 py-16">
       <div className="flex items-center justify-between">
-        <h1 className="text-3xl font-semibold tracking-tight">SimplyCode boilerplate</h1>
+        <h1 className="text-3xl font-semibold tracking-tight">Charla Academy</h1>
         <ThemeToggle />
       </div>
       <p className="text-muted-foreground leading-relaxed">

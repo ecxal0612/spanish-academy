@@ -1,4 +1,4 @@
-# Agent guide (simplycode-boiler)
+# Agent guide (Charla Academy)
 
 Opinionated **Next.js 16** starter: Auth.js v5 (JWT + Google + credentials), Drizzle + Neon, TanStack Query, shadcn, Tailwind 4, Uploadthing, Jotai, **@dnd-kit** (core + sortable + utilities).
 
@@ -38,4 +38,4 @@ Opinionated **Next.js 16** starter: Auth.js v5 (JWT + Google + credentials), Dri
 
 ## When this folder is a product copy
 
-Update `package.json` name, `.env.example` / `DB_TABLE_PREFIX`, and `NEXT_PUBLIC_APP_NAME`. Prefer **`db:push`** until you commit app-specific migrations. Fix generic bugs here in **simplycode-boiler** first, then port to product repos.
+Update `package.json` name, `.env.example` / `DB_TABLE_PREFIX`, and `NEXT_PUBLIC_APP_NAME`. Prefer **`db:push`** until you commit app-specific migrations. Fix generic bugs in the upstream boiler first, then port to this repo.

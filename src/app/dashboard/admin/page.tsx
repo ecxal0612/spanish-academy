@@ -9,7 +9,9 @@ export default function AdminPage() {
       </CardHeader>
       <CardContent className="text-sm text-muted-foreground">
         Promote a user in the database:{" "}
-        <code className="rounded bg-muted px-1.5 py-0.5">UPDATE simplycode_users SET role = &apos;admin&apos; …</code>
+        <code className="rounded bg-muted px-1.5 py-0.5">
+          UPDATE {'{your_prefix}_users'} SET role = &apos;admin&apos; …
+        </code>
       </CardContent>
     </Card>
   );

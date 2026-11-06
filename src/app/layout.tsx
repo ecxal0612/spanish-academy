@@ -8,7 +8,7 @@ import { env } from "~/env";
 
 export const metadata: Metadata = {
   title: env.NEXT_PUBLIC_APP_NAME,
-  description: "Next.js + Auth.js + Drizzle boilerplate",
+  description: "Next.js + Auth.js + Drizzle",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

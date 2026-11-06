@@ -1,4 +1,4 @@
-# simplycode-boiler
+# Charla Academy
 
 Opinionated starter for Vercel + Neon apps: **Next.js 16.4**, **React 19.3**, **Auth.js v5**, **Drizzle ORM 0.45**, **TanStack Query 5**, **shadcn/Radix**, **Jotai 3**, **dnd-kit**, **Uploadthing 7**, **Tailwind CSS 4.3**, **Zod 4**.
 
@@ -24,12 +24,12 @@ Open [http://localhost:3000](http://localhost:3000).
 | Variable | Purpose |
 | -------- | ------- |
 | `DATABASE_URL` | Neon Postgres (**pooled** URL on Vercel/serverless) |
-| `DB_TABLE_PREFIX` | Table namespace, e.g. `simplycode` → `simplycode_users` |
+| `DB_TABLE_PREFIX` | Table namespace, e.g. `charla_academy` → `charla_academy_users` |
 | `AUTH_SECRET` | Auth.js session signing (`openssl rand -base64 32`) |
 | `AUTH_URL` | Public site URL (production domain on Vercel) |
 | `AUTH_GOOGLE_*` | Google OAuth (optional in dev if omitted) |
 | `UPLOADTHING_TOKEN` | File uploads (optional until used) |
-| `NEXT_PUBLIC_APP_NAME` | UI title (optional; defaults to `SimplyCode`) |
+| `NEXT_PUBLIC_APP_NAME` | UI title (optional; defaults to `Charla Academy`) |
 
 ## Session strategy (JWT)
 
@@ -72,7 +72,7 @@ pnpm dlx shadcn@latest add dialog
    | Variable | Notes |
    | -------- | ----- |
    | `DATABASE_URL` | Pooled Neon URL |
-   | `DB_TABLE_PREFIX` | e.g. `simplycode` |
+   | `DB_TABLE_PREFIX` | e.g. `charla_academy` |
    | `AUTH_SECRET` | Production secret; mark **Sensitive** in Vercel |
    | `AUTH_URL` | `https://your-app.vercel.app` (or custom domain) |
 
