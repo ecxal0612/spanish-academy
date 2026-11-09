@@ -1,0 +1,83 @@
+/**
+ * Charla Academy — global marketing & app-wide design tokens.
+ * Import after Tailwind base in globals.css.
+ */
+
+@layer base {
+  :root {
+    /* Brand palette */
+    --charla-navy: #134686;
+    --charla-red: #ed3f27;
+    --charla-yellow: #fff83f;
+    --charla-orange: #fe7f2d;
+    --charla-light-blue: #a6c8e2;
+    --charla-lime: #c3f498;
+    --charla-black: #060606;
+
+    /* Semantic mapping (light marketing shell) */
+    --charla-bg-page: #f7faf9;
+    --charla-bg-sky: #f4faff;
+    --charla-surface: #ffffff;
+    --charla-text-primary: #192f49;
+    --charla-text-muted: #415772;
+    --charla-nav-pill-bg: #f0f3f2;
+    --charla-nav-pill-active-bg: #ffffff;
+    /* Primary dark buttons (CTAs) */
+    --charla-button-dark: #060606;
+
+    /* Typography — Outfit variable (100–900); semantic weights below */
+    --font-weight-body: 400;
+    --font-weight-eyebrow: 500;
+    --font-weight-heading: 700;
+  }
+}
+
+@layer components {
+  .charla-container {
+    @apply mx-auto w-full max-w-[1400px] px-4 sm:px-6 lg:px-8;
+  }
+
+  .charla-heading-xl {
+    font-weight: var(--font-weight-heading);
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+  }
+
+  .charla-eyebrow {
+    font-weight: var(--font-weight-eyebrow);
+  }
+
+  .charla-body {
+    font-weight: var(--font-weight-body);
+  }
+
+  .testimonial-slide-next {
+    animation: charla-testimonial-slide-next 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .testimonial-slide-prev {
+    animation: charla-testimonial-slide-prev 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+}
+
+@keyframes charla-testimonial-slide-next {
+  from {
+    transform: translateX(12%);
+    opacity: 0.45;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes charla-testimonial-slide-prev {
+  from {
+    transform: translateX(-12%);
+    opacity: 0.45;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
